@@ -5,7 +5,12 @@ public class Board {
 		this.initialize();
 	}
 	
-	private static void initialize() {
-		
+	private void initialize() {
+		this.board[3][2] = new Pawn(true);
 	}
+	
+	public Piece[][] getBoard() {
+		return this.board;
+	}
+	
 }
